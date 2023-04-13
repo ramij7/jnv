@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .container {
+            border: solid rgb(96 82 143) 5px;
+            background-color: rgb(156, 147, 168);
+            padding: 1px 300px 50px 450px;
+            margin: 3%;
+            border-radius: 135px;
+        }
+        .form{
+          font-size: large;
+          
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(66 28 100);
+            text-align: justify;
+        }
+        .btn{
+           border: solid rgb(184, 179, 186) 2px;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           cursor: pointer;
+           border-radius: 10px;
+        }
+        .btn:hover{
+           color: rgb(95, 8, 99);
+        }
+        .box{display: inline-block;
+            border: solid 4px rgb(0, 0, 0);
+            border-radius: 20px;
+            background-color: rgb(66 28 100);
+            width: 55px;
+            height: 23px;
+            position: fixed;
+            margin-left: 60%;
+        }
+        .box:hover{
+            background-color:rgb(156, 147, 168);}
+      #home:hover{
+        color: black;
+      }
+    #home{
+        text-decoration: none;
+        color: white;
+        position: relative;
+        padding-left: 7px;
+        padding-top: 7px;
+
+     
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="padding: 45px;">FILL THE GIVEN FORM TO REACH US</h2>
+        <form action="backend.php">
+            <div class="form"> Name: <input type="text" name="name"></div> <br>
+            <div class="form"> Age: <input type="number" name="age"> </div> <br>
+            <div class="form"> <label for="class">Class: </label>
+                <select name="class" id="class"></select>
+                <option value="V" id="class"> </option>
+                <option value="VI" id="class"> </option>
+            </div>
+            <div class="form"> DOB: <input type="date" name="dob"> </div> <br>
+            <div class="form"> Email: <input type="email" name="email"></div> <br>
+            <div class="form"> Password: <input type="password" name="password"></div> <br>
+            <div class="form"> Gender: Male<input type="radio" name="gender"> FeMale<input type="radio" name="gender"> Other<input
+                    type="radio" name="gender"> </div> <br>
+            <div class="form"> write about yourself: <br> <textarea name="text" cols="80" rows="10"></textarea> </div>
+            <div class="form"> Are you accept <a href="tc.html" target="_blank">T&C</a>: <input type="checkbox" name="t&c"></div>
+            <br>
+
+            <div style="padding-left: 210px;"> <input class="btn" type="submit" value="Submit Now"> <input class="btn"  type="reset"
+                    value="Reset"> </div>
+          <div class="box">
+          <a id="home" href="tut5.html">Home</a>
+             </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
