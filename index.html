@@ -43,11 +43,23 @@
     }
 
     .navbar li a:hover {
-      color: rgb(233, 133, 150);
+      color: orangered;
     }
-    .search{
-      float:right;
-      padding: 15px 118px;
+
+    .login {
+      float: right;
+    }
+
+    .logbox {
+
+      border-radius: 7px;
+
+    }
+
+    .logbox:hover {
+      background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(47,18,79,1) 87%);
+      border: solid 1px white;
     }
 
     body {
@@ -91,13 +103,15 @@
 <header>
   <nav class="navbar">
     <ul>
-      <li> <a href="index.html">Home</a> </li>
+      <li> <a href="tut5.html">Home</a> </li>
       <li> <a href="#">About</a> </li>
       <li> <a href="#">Services</a> </li>
       <li> <a href="tut8.html">Contact us</a> </li>
-      <div class="search">
-        <input type="text" name="search" id="seacrh" placeholder="search this website">
 
+      <div class="login">
+        <!-- <input type="text" name="search" id="seacrh" placeholder="search this website"> -->
+        <li> <a class="logbox" href="#">LOGIN</a> </li>
+        <li> <a class="logbox" href="#">SIGNUP</a></li>
       </div>
     </ul>
 
